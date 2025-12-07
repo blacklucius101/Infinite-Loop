@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://picsum.photos/32/32" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Loop Jukebox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #111;
+        color: #eee;
+        overflow: hidden; /* Prevent scrolling during interaction */
+      }
+      /* Custom scrollbar for track lists if needed */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #222;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #444;
+        border-radius: 4px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Infinite Loop Jukebox",
+  "description": "An offline, browser-based audio remixer that analyzes music structure to create infinite, seamless loops.",
+  "requestFramePermissions": []
+}
