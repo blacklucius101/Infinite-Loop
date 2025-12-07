@@ -5,9 +5,25 @@
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Run the app:
    `npm run dev`
+
+## Building the Desktop App
+
+**Prerequisites:**
+
+*   [Node.js](https://nodejs.org/)
+*   [Rust](https://www.rust-lang.org/tools/install)
+*   [Tauri Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites)
+
+**Steps:**
+
+1.  Install dependencies:
+    `npm install`
+2.  Build the app:
+    `npm run tauri build`
+
+This will create a Windows installer (`.msi`) in the `src-tauri/target/release/bundle/msi/` directory.
 
 Explanation of Core Logic
 1. Beat Detection (services/analysis.ts)
