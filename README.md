@@ -1,15 +1,28 @@
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js
 
+1.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+2.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+    The application will be accessible at `http://localhost:3000`.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Build for Production
 
-Explanation of Core Logic
+To create a production-ready build of the application, run the following command:
+
+```bash
+npm run build
+```
+
+This will generate a `dist` folder containing the optimized and minified files for deployment.
+
+## Explanation of Core Logic
 1. Beat Detection (services/analysis.ts)
 We use a Dynamic Threshold algorithm on the audio energy (RMS).
 The audio is split into small windows (~23ms).
